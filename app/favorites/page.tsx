@@ -25,6 +25,16 @@ export default function FavoritesPage() {
             How to Consistently Go Viral by Nikita Bier
           </a>
         </li>
+        <li>
+          <a
+            href="https://x.com/chrishlad/status/1863919588666220764/photo/1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-base leading-relaxed text-muted-foreground underline decoration-dotted hover:text-foreground"
+          >
+            Why Travis Kalanick is a winner
+          </a>
+        </li>
       </ul>
     </main>
   )
