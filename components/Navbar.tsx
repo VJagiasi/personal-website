@@ -12,8 +12,7 @@ export function Navbar() {
     // { name: "Home", path: "/" },
     { name: "Work", path: "/work" },
     { name: "Writings", path: "/writings" },
-    // Removed the "Favorites" link
-    // { name: "Favorites", path: "/favorites" },
+    { name: "Favorites", path: "/favorites" },
     // Removed the "Life" link
     // { name: "Life", path: "/camcorders" },
   ]
