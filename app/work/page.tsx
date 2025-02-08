@@ -29,8 +29,9 @@ export default function WorkPage() {
       </motion.h1>
       <div className="space-y-16">
         {[
-        {
+          {
             company: "Ordergrid",
+            url: "https://www.ordergrid.com/",
             role: "Software Engineering Intern",
             date: "Jan 2025  Present",
             achievements: [
@@ -39,6 +40,7 @@ export default function WorkPage() {
           },
           {
             company: "BDO",
+            url: "https://www.bdo.com/",
             role: "Software Engineering Intern",
             date: "May 2024 – Aug 2024",
             achievements: [
@@ -49,6 +51,7 @@ export default function WorkPage() {
           },
           {
             company: "UWBlueprint",
+            url: "https://uwblueprint.org/",
             role: "Software Engineer",
             date: "2024-Present",
             achievements: [
@@ -57,17 +60,8 @@ export default function WorkPage() {
             ],
           },
           {
-            company: "WatStreet",
-            role: "Software Engineer",
-            date: "Feb 2024 - Aug 2024 ",
-            achievements: [
-              "Development of an algorithmic trading backtesting application, integrating stock and crypto data APIs in Next.js.",
-              "Visualized TensorFlow deep learning model simulations with custom React graphing components.",
-              "Shipped 8 new features, boosting overall platform performance by 40% and adding advanced trading algorithms.",
-            ],
-          },
-          {
             company: "CogNext AI",
+            url: "https://cognext.ai/",
             role: "Software Engineering Intern",
             date: "May 2023 – Aug 2023",
             achievements: [
@@ -85,9 +79,33 @@ export default function WorkPage() {
               "Drove a 47% sales increase via automated Python email receipts, enhancing customer engagement and product promotion.",
             ],
           },
+          {
+            company: "WatStreet",
+            url: "https://watstreet.netlify.app/",
+            role: "Software Engineer",
+            date: "Feb 2024 - Aug 2024",
+            achievements: [
+              "Development of an algorithmic trading backtesting application, integrating stock and crypto data APIs in Next.js.",
+              "Visualized TensorFlow deep learning model simulations with custom React graphing components.",
+              "Shipped 8 new features, boosting overall platform performance by 40% and adding advanced trading algorithms.",
+            ],
+          },
         ].map((job) => (
           <motion.div key={job.company} className="space-y-2 border-b border-dotted border-neutral-300 pb-4" variants={item}>
-            <h2 className="text-xl font-normal">{job.company}</h2>
+            <h2 className="text-xl font-normal">
+              {job.url ? (
+                <a
+                  href={job.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-normal text-inherit decoration-dotted decoration-neutral-400 underline underline-offset-4 hover:decoration-neutral-800 transition-colors"
+                >
+                  {job.company}
+                </a>
+              ) : (
+                job.company
+              )}
+            </h2>
             <p className="text-neutral-500 text-sm">
               {job.role}, {job.date}
             </p>
