@@ -99,7 +99,7 @@ export default function Page() {
         </motion.p>
       </motion.section>
 
-      <motion.section variants={section}>
+      {/* <motion.section variants={section}>
         <motion.h2 className="mb-8 text-lg font-normal" variants={item}>
           Work
         </motion.h2>
@@ -164,7 +164,7 @@ export default function Page() {
             </motion.div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
     </motion.main>
   )
 }
