@@ -58,7 +58,7 @@ export default function Page() {
           >
             Perplexity
           </a>{" "}
-          and build software for nonprofits at{" "}
+          and building software for nonprofits at{" "}
           <a
             href="https://uwblueprint.org/"
             target="_blank"
