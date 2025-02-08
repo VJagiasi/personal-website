@@ -33,7 +33,7 @@ export default function Page() {
   }
 
   return (
-    <motion.main className="py-12 space-y-16" variants={container} initial="hidden" animate="show">
+    <motion.main className="py-12 px-6 md:px-0 space-y-16" variants={container} initial="hidden" animate="show">
       <motion.section className="prose prose-neutral dark:prose-invert space-y-4" variants={section}>
         <motion.p className="text-base leading-relaxed" variants={item}>
           Engineer @{" "}
@@ -47,13 +47,6 @@ export default function Page() {
           </a>{" "}
           working in the intersection of AI, Product and Design
 
-        </motion.p>
-        <motion.p className="text-base leading-relaxed" variants={item}>
-        Building AI-powered solutions to transform food retail and distribution—streamlining operations, optimizing inventory, and driving sustainable growth.
-        </motion.p>
-        <motion.p className="text-base leading-relaxed" variants={item}>
-          Based out of Waterloo but currently in Boston working remotely. Reach out if you&apos;re in Boston and
-          building something would love to meetup
         </motion.p>
         <motion.p className="text-base leading-relaxed" variants={item}>
           Currently a junior at Waterloo and running growth for{" "}
@@ -76,6 +69,14 @@ export default function Page() {
           </a>
           .
         </motion.p>
+        {/* <motion.p className="text-base leading-relaxed" variants={item}>
+        Building AI-powered solutions to transform food retail and distribution—streamlining operations, optimizing inventory, and driving sustainable growth.
+        </motion.p> */}
+        <motion.p className="text-base leading-relaxed" variants={item}>
+          Based out of Waterloo but currently in Boston working remotely. Reach out if you&apos;re in Boston and
+          building something would love to meetup
+        </motion.p>
+        
         <motion.p className="text-base leading-relaxed" variants={item}>
           I mix music, make short films on camcorders, and write occasionally.
         </motion.p>

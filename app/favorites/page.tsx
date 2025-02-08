@@ -2,7 +2,7 @@
 
 export default function FavoritesPage() {
   return (
-    <main className="py-12 max-w-2xl">
+    <main className="py-12 px-6 md:px-0 max-w-2xl">
       <h1 className="text-2xl font-normal mb-8">Favorites</h1>
       <ul className="space-y-4">
         <li>
@@ -33,6 +33,16 @@ export default function FavoritesPage() {
             className="text-base leading-relaxed text-muted-foreground underline decoration-dotted hover:text-foreground"
           >
             Why Travis Kalanick is a winner
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://patrickcollison.com/advice"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-base leading-relaxed text-muted-foreground underline decoration-dotted hover:text-foreground"
+          >
+            Advice for ambitious teenagers by Patrick Collison
           </a>
         </li>
       </ul>

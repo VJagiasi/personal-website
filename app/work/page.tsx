@@ -23,7 +23,7 @@ export default function WorkPage() {
   }
 
   return (
-    <motion.main className="py-12 max-w-2xl" variants={container} initial="hidden" animate="show">
+    <motion.main className="py-12 px-6 md:px-0 max-w-2xl" variants={container} initial="hidden" animate="show">
       <motion.h1 className="text-2xl font-normal mb-16" variants={item}>
         Work
       </motion.h1>
