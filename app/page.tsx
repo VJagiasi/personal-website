@@ -45,7 +45,7 @@ export default function Page() {
           >
             Ordergrid
           </a>{" "}
-          working in the intersection of AI, Product and Design
+          building AI-powered inventory systems to optimize operations for food retailers and distributors.
 
         </motion.p>
         <motion.p className="text-base leading-relaxed" variants={item}>
@@ -58,7 +58,16 @@ export default function Page() {
           >
             Perplexity
           </a>{" "}
-          and building software for nonprofits at{" "}
+          and{" "}
+          <a
+            href="https://mercor.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-normal text-inherit decoration-dotted decoration-neutral-400 underline underline-offset-4 hover:decoration-neutral-800 transition-colors"
+          >
+            Mercor
+          </a>
+          , and building software for nonprofits at{" "}
           <a
             href="https://uwblueprint.org/"
             target="_blank"
