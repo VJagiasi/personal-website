@@ -1,0 +1,16 @@
+name: Skip Jekyll Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  skip-jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip Jekyll
+        run: |
+          echo "This is a Next.js project, skipping Jekyll build"
+          exit 0 
