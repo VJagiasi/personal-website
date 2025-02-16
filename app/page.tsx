@@ -36,7 +36,7 @@ export default function Page() {
     <motion.main className="py-12 px-6 md:px-0 space-y-16" variants={container} initial="hidden" animate="show">
       <motion.section className="prose prose-neutral dark:prose-invert space-y-4" variants={section}>
         <motion.p className="text-base leading-relaxed" variants={item}>
-          Engineer and Designer @{" "}
+          Eng + Design @{" "}
           <a
             href="https://www.ordergrid.com/"
             target="_blank"
@@ -49,7 +49,7 @@ export default function Page() {
 
         </motion.p>
         <motion.p className="text-base leading-relaxed" variants={item}>
-          Currently a junior at Waterloo and running growth for{" "}
+          Currently a junior at Waterloo running growth for{" "}
           <a
             href="https://www.perplexity.ai/"
             target="_blank"
@@ -67,7 +67,7 @@ export default function Page() {
           >
             Mercor
           </a>
-          , and building software for nonprofits at{" "}
+           and building software for nonprofits at{" "}
           <a
             href="https://uwblueprint.org/"
             target="_blank"
@@ -82,12 +82,11 @@ export default function Page() {
         Building AI-powered solutions to transform food retail and distribution—streamlining operations, optimizing inventory, and driving sustainable growth.
         </motion.p> */}
         <motion.p className="text-base leading-relaxed" variants={item}>
-          Based out of Waterloo but currently in Boston working remotely. Reach out if you&apos;re in Boston and
-          building something would love to meetup
+          Based out of Waterloo but currently in Boston working remote.
         </motion.p>
         
         <motion.p className="text-base leading-relaxed" variants={item}>
-          I mix music, make short films on camcorders, and write occasionally.
+          I mix music, make short films on camcorders, and write sometimes.
         </motion.p>
         <motion.p className="text-base leading-relaxed" variants={item}>
           Reach out to me at{" "}
