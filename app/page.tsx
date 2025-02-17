@@ -65,7 +65,7 @@ export default function Page() {
             rel="noopener noreferrer"
             className="font-normal text-inherit decoration-dotted decoration-neutral-400 underline underline-offset-4 hover:decoration-neutral-800 transition-colors"
           >
-            Mercor
+            Mercor {""}
           </a>
            and building software for nonprofits at{" "}
           <a

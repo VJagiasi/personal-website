@@ -3,9 +3,9 @@
 export default function FavoritesPage() {
   return (
     <main className="py-12 px-6 md:px-0 max-w-2xl">
-      <h1 className="text-2xl font-normal mb-8">Favorites</h1>
+      <h1 className="text-2xl font-sans mb-8">Favorites</h1>
       
-      <div className="space-y-12">
+      <div className="space-y-12 font-mono">
         <section>
           <p className="text-base text-muted-foreground">
             few of the readings i keep going back often {" "}
@@ -21,7 +21,7 @@ export default function FavoritesPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-normal mb-2">
+          <h2 className="text-xl font-sans mb-2">
             Blogs & Articles
           </h2>
           <ul className="space-y-4">
@@ -69,7 +69,7 @@ export default function FavoritesPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-normal mb-2">
+          <h2 className="text-xl font-sans mb-2">
             Videos
           </h2>
           <ul className="space-y-4">
