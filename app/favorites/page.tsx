@@ -2,13 +2,13 @@
 
 export default function FavoritesPage() {
   return (
-    <main className="py-12 px-6 md:px-0 max-w-2xl">
-      <h1 className="text-2xl font-sans mb-8">Favorites</h1>
+    <main className="py-12 px-6 md:px-0 max-w-2xl font-mono">
+      <h1 className="text-2xl mb-8">Favorites</h1>
       
-      <div className="space-y-12 font-mono">
+      <div className="space-y-12">
         <section>
           <p className="text-base text-muted-foreground">
-            few of the readings i keep going back often {" "}
+            few of the readings i keep going back to often {" "}
             <a
               href="https://curius.app/vihaan-jagiasi"
               target="_blank"
@@ -21,7 +21,7 @@ export default function FavoritesPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-sans mb-2">
+          <h2 className="text-xl mb-2">
             Blogs & Articles
           </h2>
           <ul className="space-y-4">
@@ -69,7 +69,7 @@ export default function FavoritesPage() {
         </section>
 
         <section>
-          <h2 className="text-xl font-sans mb-2">
+          <h2 className="text-xl mb-2">
             Videos
           </h2>
           <ul className="space-y-4">
