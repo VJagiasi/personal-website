@@ -5,8 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:vercel": "cross-env NEXT_OUTPUT_DIR=dist next build",
-    "verify-build": "./build-check.sh",
     "start": "next start",
     "lint": "next lint"
   },

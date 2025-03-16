@@ -16,8 +16,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Important: Output directory for Vercel deployment
-  distDir: 'dist',
+  // Removing custom distDir to use Next.js defaults
   images: {
     unoptimized: true,
     domains: ['www.notion.so', 's3.us-west-2.amazonaws.com'],
