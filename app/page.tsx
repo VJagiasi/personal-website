@@ -67,7 +67,7 @@ export default function Page() {
           >
             Mercor {""}
           </a>
-           and building software for nonprofits at{" "}
+           on campus and building software for nonprofits at{" "}
           <a
             href="https://uwblueprint.org/"
             target="_blank"
