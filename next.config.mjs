@@ -16,6 +16,8 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // We need this for Vercel deployment
+  distDir: 'dist',
   images: {
     unoptimized: true,
     domains: ['www.notion.so', 's3.us-west-2.amazonaws.com'],
