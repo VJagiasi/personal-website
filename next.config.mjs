@@ -16,7 +16,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // We need this for Vercel deployment
+  // Important: Output directory for Vercel deployment
   distDir: 'dist',
   images: {
     unoptimized: true,
