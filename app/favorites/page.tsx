@@ -6,19 +6,6 @@ export default function FavoritesPage() {
       <h1 className="text-2xl mb-8">Favorites</h1>
       
       <div className="space-y-12">
-        <section>
-          <p className="text-base text-muted-foreground">
-            few of the readings i keep going back to often {" "}
-            <a
-              href="https://curius.app/vihaan-jagiasi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-base leading-relaxed text-muted-foreground underline decoration-dotted hover:text-foreground"
-            >
-              Curius Collection
-            </a>
-          </p>
-        </section>
 
         <section>
           <h2 className="text-xl mb-2">
