@@ -16,8 +16,6 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Define the source directory for the application
-  distDir: 'dist',
   images: {
     unoptimized: true,
     domains: ['www.notion.so', 's3.us-west-2.amazonaws.com'],
