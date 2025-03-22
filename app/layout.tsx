@@ -4,7 +4,7 @@ import { GeistMono } from "geist/font/mono"
 import { Inter, Merriweather } from "next/font/google"
 
 import "./globals.css"
-import { Navbar } from "@/components/Navbar"
+import { Navbar } from "@/components/layout/Navbar"
 import { ThemeProvider } from "@/context/ThemeContext"
 
 // Initialize the serif font

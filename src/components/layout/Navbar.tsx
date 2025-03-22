@@ -12,13 +12,10 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    // Removed the "Home" link
-    // { name: "Home", path: "/" },
     { name: "Work", path: "/work" },
+    { name: "Principles", path: "/principles" },
     { name: "Writings", path: "/writings" },
     { name: "Favorites", path: "/favorites" },
-    // Removed the "Life" link
-    // { name: "Life", path: "/camcorders" },
   ]
 
   const menuVariants = {

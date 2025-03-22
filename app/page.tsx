@@ -36,7 +36,7 @@ export default function Page() {
     <motion.main className="py-12 px-6 md:px-0 space-y-16" variants={container} initial="hidden" animate="show">
       <motion.section className="prose prose-neutral dark:prose-invert space-y-4" variants={section}>
         <motion.p className="text-base leading-relaxed" variants={item}>
-          Eng + Design @{" "}
+          Engineer @{" "}
           <a
             href="https://www.ordergrid.com/"
             target="_blank"
