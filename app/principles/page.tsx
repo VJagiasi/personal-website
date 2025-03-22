@@ -34,7 +34,7 @@ export default function PrinciplesPage() {
       </motion.h1>
       
       <motion.p className="text-m text-neutral-600 italic mb-16" variants={item}>
-        * Note: I keep iterating these often based on different learnings through instances in my day to day.
+        I live by these few principles. Note: this list is not complete yet
       </motion.p>
       
       <div className="space-y-16">
