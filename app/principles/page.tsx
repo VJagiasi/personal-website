@@ -39,7 +39,7 @@ export default function PrinciplesPage() {
       
       <div className="space-y-16">
         <motion.div className="space-y-2 border-b border-dotted border-neutral-300 pb-4" variants={item}>
-          <h4 className="text-xl font-normal">1. too much self-belief</h4>
+          <h4 className="text-xl font-normal">1. betting on myself</h4>
           <p className="text-neutral-800 pl-4 relative mt-4">
             <span className="absolute left-0 top-[0.5em] w-1 h-1 bg-neutral-300 rounded-full" />
             i don't care if every single person on this planet—including my family, my friends, and everyone i know stops believing in me. As long as I do - I don't give a shit. The day I stop -  I'm better off dead.
