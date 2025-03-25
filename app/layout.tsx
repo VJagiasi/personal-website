@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Inter, Merriweather } from "next/font/google"
+import NavigationProgressProvider from '@/components/NavigationProgressProvider'
 
 import "./globals.css"
 import { Navbar } from "@/components/layout/Navbar"
@@ -22,17 +23,23 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} ${serif.variable}`}>
       <body className="min-h-screen bg-background font-sans antialiased">
         <ThemeProvider>
-          <div className="mx-auto max-w-2xl px-4">
-            <Navbar />  
-            {children}
-          </div>
+          <NavigationProgressProvider 
+            color="#000000"
+            height={6}
+            showScrollProgress={true}
+          >
+            <div className="mx-auto max-w-2xl px-4">
+              <Navbar />  
+              {children}
+            </div>
+          </NavigationProgressProvider>
         </ThemeProvider>
       </body>
     </html>
