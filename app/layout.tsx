@@ -3,6 +3,7 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Inter, Merriweather } from "next/font/google"
 import NavigationProgressProvider from '@/components/NavigationProgressProvider'
+import { Suspense } from "react"
 
 import "./globals.css"
 import { Navbar } from "@/components/layout/Navbar"
@@ -30,16 +31,18 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} ${serif.variable}`}>
       <body className="min-h-screen bg-background font-sans antialiased">
         <ThemeProvider>
-          <NavigationProgressProvider 
-            color="#000000"
-            height={6}
-            showScrollProgress={true}
-          >
-            <div className="mx-auto max-w-2xl px-4">
-              <Navbar />  
-              {children}
-            </div>
-          </NavigationProgressProvider>
+          <Suspense>
+            <NavigationProgressProvider 
+              color="#000000"
+              height={6}
+              showScrollProgress={true}
+            >
+              <div className="mx-auto max-w-2xl px-4">
+                <Navbar />  
+                {children}
+              </div>
+            </NavigationProgressProvider>
+          </Suspense>
         </ThemeProvider>
       </body>
     </html>
