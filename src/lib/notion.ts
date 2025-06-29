@@ -11,18 +11,20 @@ if (typeof window === 'undefined') {
   });
 }
 
-export const databaseId = process.env.NOTION_DATABASE_ID;
+export const ids = {
+  writings: process.env.NOTION_DATABASE_ID, // This is a database
+  observations: process.env.NOTION_OBSERVATIONS_PAGE_ID // This is a page
+};
 
 export async function getDatabase() {
+  const databaseId = ids.writings;
+  
+  if (!databaseId) {
+    throw new Error('Database ID for writings not found');
+  }
+
   const response = await notion.databases.query({
-    database_id: databaseId as string,
-    // Removing the sort by Date since that property doesn't exist
-    // sorts: [
-    //   {
-    //     property: 'Date',
-    //     direction: 'descending',
-    //   },
-    // ],
+    database_id: databaseId,
   });
   
   return response.results;
@@ -78,4 +80,15 @@ export async function getBlocks(blockId: string): Promise<BlockWithChildren[]> {
   });
   
   return blocksWithChildren;
+}
+
+// New function specifically for getting observations from a page
+export async function getObservationsContent(): Promise<BlockWithChildren[]> {
+  const pageId = ids.observations;
+  
+  if (!pageId) {
+    throw new Error('Page ID for observations not found');
+  }
+
+  return getBlocks(pageId);
 } 
